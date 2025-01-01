@@ -1,14 +1,23 @@
 What is Docker Compose?
-Docker Compose is a tool used for defining and managing multi-container Docker applications. It allows you to describe your application stack (services, networks, and volumes) in a single YAML file (docker-compose.yml) and deploy it with a single command.
+=======================
+
+Docker Compose is a tool used for defining and managing multi-container Docker applications. 
+It allows you to describe your application stack (services, networks, and volumes) in a single YAML file (docker-compose.yml) 
+and deploy it with a single command.
 
 Key Features of Docker Compose
+===============================
+
 Multi-Container Management: Manage multiple services in one configuration file.
 Declarative Configuration: Define all services, networks, and volumes in a YAML file.
 Service Orchestration: Start, stop, and rebuild all services with a single command.
 Networking: Automatically creates a dedicated network for services to communicate.
 Environment Variables: Use .env files to customize configurations for different environments.
 Portability: Easily share configurations for consistent deployments across environments.
+
 3-Tier Application Example
+============================
+
 We’ll build a simple 3-tier application with:
 
 Frontend: Nginx
@@ -28,7 +37,9 @@ Copy code
 ├── frontend/
 │   ├── Dockerfile
 │   └── default.conf
+
 1. docker-compose.yml
+ ===============
 Define the entire application stack in this file.
 
 yaml
